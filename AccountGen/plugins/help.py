@@ -17,6 +17,6 @@ async def helper(event):
     await event.edit(text,
                      buttons=[
                          [Button.url("Channel", url=ltc), Button.url("Dev", url="https://t.me/BotzHub")],
-                         [Button.url("Repository", url="https://github.com/xditya/AccountsGenBot")],
+                         [Button.url("Owner", url="https://t.me/Madboi_xD")]
                          [Button.inline("Generate Accounts", data="gen")]
                      ])
