@@ -16,7 +16,7 @@ async def helper(event):
     text="I am an Account Generator Bot!\nI can generate working accounts for you.\n\nClick generate accounts to get your account!! Make sure to join my channel and support me!"
     await event.edit(text,
                      buttons=[
-                         [Button.url("Channel", url=ltc), Button.url("Dev", url="https://t.me/BotzHub")],
-                         [Button.url("Owner", url="https://t.me/Madboi_xD")]
+                         [Button.url("Join Channel", url=ltc), Button.url("Hacking", url="https://t.me/MadBurnerz")],
+                         [Button.url("Owner", url="https://t.me/Madboi_xD")],
                          [Button.inline("Generate Accounts", data="gen")]
                      ])
