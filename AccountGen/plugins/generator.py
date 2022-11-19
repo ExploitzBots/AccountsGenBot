@@ -17,6 +17,8 @@ from telethon.tl.functions.users import GetFullUserRequest
 async def gen(event):
     if not (await check_user(event.sender_id)):
         return await event.reply(f"{strt}\n\nOops! You need to join my channel so as to use me!", buttons=[Button.url("Join My Channel", url=ltc)])
+    sed = random.choice(xd)
+    email, password = sed.split(":")
     xxx = await BotzHub(GetFullUserRequest(event.sender_id))
     botname = (await BotzHub.get_me()).username
     if ACC_NAME is None:
