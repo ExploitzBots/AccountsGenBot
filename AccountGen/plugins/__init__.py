@@ -15,21 +15,10 @@ import requests
 from telethon.errors.rpcerrorlist import UserNotParticipantError
 from telethon.tl.functions.channels import GetParticipantRequest
 
-if ACCOUNTS is None:
-    print("I guess you forgot to load accounts!")
-    print("Bot is quiting..")
-    exit()
-
-try:
-    temp = requests.get(ACCOUNTS)
-except:
-    print("Issues with the ACCOUNTS url.")
-    print(str(e))
-    print("Bot is quiting...")
-    exit()
-else:
-    tmp = temp.text
-    listofaccs = tmp.split()
+with open('hits.txt') as f:
+    xd = f.read().splitlines()
+    sed = random.choice(xd)
+    email, password = sed.split(":")
 
 async def check_user(id):
     if CHANNEL is None:     # incase no join check is needed
