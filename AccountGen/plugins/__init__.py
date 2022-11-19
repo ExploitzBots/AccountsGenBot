@@ -11,6 +11,7 @@
 
 from telethon import events, Button
 from .. import *
+from . import *
 import requests
 from telethon.errors.rpcerrorlist import UserNotParticipantError
 from telethon.tl.functions.channels import GetParticipantRequest
