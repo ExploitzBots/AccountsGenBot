@@ -19,8 +19,6 @@ from telethon.tl.functions.channels import GetParticipantRequest
 
 with open('hits.txt') as f:
     xd = f.read().splitlines()
-    sed = random.choice(xd)
-    email, password = sed.split(":")
 
 async def check_user(id):
     if CHANNEL is None:     # incase no join check is needed
